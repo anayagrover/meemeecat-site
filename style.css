@@ -123,6 +123,21 @@ a:hover { color: var(--blue-700); }
   box-shadow: 0 16px 36px rgba(214, 71, 155, 0.18);
 }
 .tile-emoji { font-size: 52px; line-height: 1; flex-shrink: 0; }
+
+/* App-icon style (iOS-like rounded square) */
+.app-icon {
+  display: block;
+  width: 72px; height: 72px;
+  border-radius: 22%;
+  box-shadow: 0 6px 16px rgba(91, 140, 255, 0.18), 0 4px 10px rgba(214, 71, 155, 0.14);
+  flex-shrink: 0;
+}
+.app-icon.hero {
+  width: 96px; height: 96px;
+  margin: 0 auto;
+  border-radius: 24%;
+  box-shadow: 0 10px 26px rgba(214, 71, 155, 0.22), 0 6px 14px rgba(91, 140, 255, 0.18);
+}
 .tile-body { flex: 1; }
 .tile-title { font-size: 1.18rem; font-weight: 800; color: var(--ink); }
 .tile-desc  { color: var(--ink-soft); font-size: 0.95rem; margin-top: 2px; }
