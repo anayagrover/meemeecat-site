@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MeeMeeCat — Support</title>
+  <title>Tiny Maker Studio — made by Anaya Grover</title>
   <style>
     :root { color-scheme: light; }
     * { box-sizing: border-box; }
@@ -15,59 +15,73 @@
       line-height: 1.6;
     }
     .wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 72px; }
-    .hero { text-align: center; margin-bottom: 36px; }
+    .hero { text-align: center; margin-bottom: 28px; }
     .icon { font-size: 72px; line-height: 1; }
-    h1 { font-size: 2rem; margin: 12px 0 4px; }
+    h1 { font-size: 2.1rem; margin: 12px 0 4px; }
     .tag { color: #8a6f93; margin: 0; }
     .card {
       background: #fff; border-radius: 20px; padding: 24px 28px; margin: 18px 0;
       box-shadow: 0 8px 24px rgba(186,120,170,0.12);
     }
     h2 { font-size: 1.2rem; margin: 0 0 10px; }
-    ul { padding-left: 1.2em; margin: 8px 0; }
     a { color: #d6479b; font-weight: 600; }
-    .btn {
-      display: inline-block; background: #ff8fc7; color: #fff; text-decoration: none;
-      padding: 12px 22px; border-radius: 999px; font-weight: 700; margin-top: 8px;
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    .chip {
+      background: #ffe1f1; color: #b3367f; border-radius: 999px;
+      padding: 7px 14px; font-weight: 600; font-size: 0.92rem;
     }
+    .section-label {
+      text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.78rem;
+      color: #a791ad; font-weight: 700; margin: 32px 0 10px;
+    }
+    .tile {
+      display: flex; align-items: center; gap: 18px; text-decoration: none; color: inherit;
+      background: #fff; border-radius: 20px; padding: 22px 24px;
+      box-shadow: 0 8px 24px rgba(186,120,170,0.12);
+      border: 2px solid transparent; transition: transform .12s ease, border-color .12s ease;
+    }
+    .tile:hover { transform: translateY(-2px); border-color: #ffb3da; }
+    .tile-emoji { font-size: 48px; line-height: 1; flex-shrink: 0; }
+    .tile-body { flex: 1; }
+    .tile-title { font-size: 1.15rem; font-weight: 800; color: #3a2e3f; }
+    .tile-desc { color: #8a6f93; font-size: 0.95rem; margin-top: 2px; }
+    .tile-arrow { color: #d6479b; font-weight: 800; font-size: 1.3rem; flex-shrink: 0; }
     footer { text-align: center; color: #a791ad; font-size: 0.85rem; margin-top: 40px; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="hero">
-      <div class="icon">🐈</div>
-      <h1>MeeMeeCat</h1>
-      <p class="tag">Make &amp; care for cute cats — a cozy, ad-free pet game for kids.</p>
+      <div class="icon">✨</div>
+      <h1>Tiny Maker Studio</h1>
+      <p class="tag">Little apps &amp; big ideas, made by Anaya Grover.</p>
     </div>
 
     <div class="card">
-      <h2>About the app</h2>
-      <p>Design your very own cat, take care of it every day, play fun mini-games, and collect
-         shiny badges. No ads, no accounts, no tracking — everything stays on your device.</p>
+      <h2>Hi, I'm Anaya! 👋</h2>
+      <p>I'm <strong>8 years old</strong> and I'm the maker behind Tiny Maker Studio. I love
+         <strong>building stuff</strong>, <strong>singing</strong>, and <strong>making art</strong>.
+         This is my little corner of the internet where I share the things I create.</p>
+      <div class="chips">
+        <span class="chip">🛠️ Building</span>
+        <span class="chip">🎤 Singing</span>
+        <span class="chip">🎨 Making art</span>
+      </div>
     </div>
 
-    <div class="card">
-      <h2>Support &amp; contact</h2>
-      <p>Questions, feedback, or trouble with the app? We're happy to help.</p>
-      <p><a class="btn" href="mailto:support@tinymaker.studio?subject=MeeMeeCat%20Support">Email support</a></p>
-      <p style="color:#8a6f93;font-size:0.95rem;">Or write to <a href="mailto:support@tinymaker.studio">support@tinymaker.studio</a></p>
-    </div>
+    <div class="section-label">My apps</div>
 
-    <div class="card">
-      <h2>Common questions</h2>
-      <ul>
-        <li><strong>Does it cost anything / have ads?</strong> No. MeeMeeCat is free with no ads and no in-app purchases.</li>
-        <li><strong>Is my child's data collected?</strong> No data is collected at all. See our
-            <a href="privacy.html">Privacy Policy</a>.</li>
-        <li><strong>What devices does it run on?</strong> iPhone and iPad running iOS 17 or later.</li>
-        <li><strong>How does sharing work?</strong> Sharing a cat photo or "cat code" uses Apple's
-            share sheet and is behind a parental gate. No live data passes between devices.</li>
-      </ul>
-    </div>
+    <a class="tile" href="meemeecat.html">
+      <div class="tile-emoji">🐈</div>
+      <div class="tile-body">
+        <div class="tile-title">MeeMeeCat</div>
+        <div class="tile-desc">Make &amp; care for cute cats — a cozy, ad-free pet game for kids.</div>
+      </div>
+      <div class="tile-arrow">→</div>
+    </a>
 
     <footer>
-      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · © 2026 MeeMeeCat</p>
+      <p><a href="meemeecat.html">MeeMeeCat</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · © 2026 Tiny Maker Studio</p>
     </footer>
   </div>
 </body>
