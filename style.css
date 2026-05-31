@@ -124,7 +124,7 @@ a:hover { color: var(--blue-700); }
 }
 .tile-emoji { font-size: 52px; line-height: 1; flex-shrink: 0; }
 
-/* App-icon style (iOS-like rounded square) */
+/* App-icon style (iOS-like rounded square) — used on the home-page tile */
 .app-icon {
   display: block;
   width: 72px; height: 72px;
@@ -132,11 +132,16 @@ a:hover { color: var(--blue-700); }
   box-shadow: 0 6px 16px rgba(91, 140, 255, 0.18), 0 4px 10px rgba(214, 71, 155, 0.14);
   flex-shrink: 0;
 }
-.app-icon.hero {
-  width: 96px; height: 96px;
-  margin: 0 auto;
-  border-radius: 24%;
-  box-shadow: 0 10px 26px rgba(214, 71, 155, 0.22), 0 6px 14px rgba(91, 140, 255, 0.18);
+
+/* Bare hero illustration (transparent PNG, no framing) — used on app pages */
+.app-hero {
+  display: block;
+  margin: 0 auto 4px;
+  width: 180px; height: 180px;
+  filter: drop-shadow(0 8px 16px rgba(214, 71, 155, 0.18));
+}
+@media (max-width: 480px) {
+  .app-hero { width: 150px; height: 150px; }
 }
 .tile-body { flex: 1; }
 .tile-title { font-size: 1.18rem; font-weight: 800; color: var(--ink); }
