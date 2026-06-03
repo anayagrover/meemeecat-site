@@ -167,6 +167,7 @@ a:hover { color: var(--blue-700); }
   transform: translateY(-2px);
   box-shadow: 0 14px 28px rgba(214, 71, 155, 0.35);
 }
+.btn-lg { padding: 16px 32px; font-size: 1.12rem; }
 
 /* Misc */
 .updated {
