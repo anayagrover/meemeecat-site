@@ -41,7 +41,7 @@ body {
   min-height: 100vh;
 }
 
-.wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 40px; }
 
 /* Hero */
 .hero { text-align: center; margin-bottom: 32px; }
@@ -183,7 +183,7 @@ footer {
 footer a { color: var(--ink-soft); }
 
 @media (max-width: 480px) {
-  .wrap { padding: 36px 18px 64px; }
+  .wrap { padding: 36px 18px 32px; }
   .hero h1 { font-size: 1.85rem; }
   .card, .tile { padding: 20px 20px; }
   .tile-emoji { font-size: 44px; }
